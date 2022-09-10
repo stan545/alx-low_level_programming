@@ -3,8 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: Prints the alphabet in lowercase
- * and then in uppercase
+ * Description: Prints the letters of the alphabet in lower then in uppercase
  *
  * Return: Always 0 (succes)
  */
@@ -13,10 +12,10 @@ int main(void)
 {
 	int i, j;
 
-	i =97;
-	j =65;
+	i = 97;
+	j = 65;
 
-	while(i < 123)
+	while (i < 123)
 	{
 		putchar(i);
 		i++;
