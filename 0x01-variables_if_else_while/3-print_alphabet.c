@@ -11,13 +11,23 @@
 
 int main(void)
 {
-	int i = 97;
+	int i, j;
 
-	while i < 123;
+	i =97;
+	j =65;
+
+	while(i < 123)
 	{
-		putchar(i)
+		putchar(i);
 		i++;
 	}
+
+	while (j < 91)
+	{
+		putchar(j);
+		j++;
+	}
+
 	putchar(10);
 
 	return (0);
