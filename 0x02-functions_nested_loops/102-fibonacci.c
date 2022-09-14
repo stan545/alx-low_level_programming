@@ -4,13 +4,13 @@
  * main - Entry point
  *
  * Description: A program that prints the first 50
- Fibonacci numbers, strating from 1 and 2.
+ *Fibonacci numbers, strating from 1 and 2.
  *
  *Return: Always 0 (success)
  */
 int main(void)
 {
-	long unsigned int first, second, sum, i, n;
+	unsigned long int first, second, sum, i, n;
 
 	first = 1;
 	second = 2;
