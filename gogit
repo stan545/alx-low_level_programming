@@ -1,0 +1,7 @@
+#!/bin/bash
+
+find ! -name README.md -exec chmod +x {} \;
+git add .
+read -p 'Enter your commit message: ' cMessage
+git commit -m "$cMessage"
+git push

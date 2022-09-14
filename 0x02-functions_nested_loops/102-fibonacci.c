@@ -1,33 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints the first 52 fibonacci numbers
  *
- * Description: A program that prints the first 50
- *Fibonacci numbers, strating from 1 and 2.
- *
- *Return: Always 0 (success)
+ * Return: Nothing!
  */
 int main(void)
 {
-	unsigned long int first, second, sum, i, n;
+	int i = 0;
+	long j = 1, k = 2;
 
-	first = 1;
-	second = 2;
-	printf("\n%lu, %lu,", first, second);
-	n = 50;
-	for (i = 1; i <= n; i++)
+	while (i < 50)
 	{
-		if (i <= 2)
-		sum = i;
+		if (i == 0)
+			printf("%ld", j);
+		else if (i == 1)
+			printf(", %ld", k);
 		else
 		{
-			sum = first + second;
-			printf(" %lu,", sum);
-			first = second;
-			second = sum;
+			k += j;
+			j = k - j;
+			printf(", %ld", k);
 		}
+		++i;
 	}
-	return (0);
 
+	printf("\n");
+	return (0);
 }
