@@ -10,24 +10,24 @@
  */
 int main(void)
 {
-	int first, second, sum, i, n;
+	long unsigned int first, second, sum, i, n;
+
 	first = 1;
 	second = 2;
-	
-	printf("\n%d %d", first, second);
+	printf("\n%lu, %lu,", first, second);
 	n = 50;
-	for(i = 1; i <= n; i++)
+	for (i = 1; i <= n; i++)
 	{
-		if(i <= 2)
+		if (i <= 2)
 		sum = i;
 		else
 		{
 			sum = first + second;
-			printf(" %d", sum);
+			printf(" %lu,", sum);
 			first = second;
 			second = sum;
 		}
 	}
-	return 0;
+	return (0);
 
 }
