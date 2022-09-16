@@ -1,5 +1,5 @@
 #include <math.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * power - exponents
