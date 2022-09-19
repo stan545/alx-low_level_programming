@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * -atoi - converts a string to an integer
+  * _atoi - converts a string to an integer
   *  @s: Then pointer to cpnvert
   *
   *Return: An integer
@@ -23,7 +23,7 @@ int _atoi(char *s)
 		while (s[c] >= 48 && s[c] <= 57)
 		{
 			isi = 1;
-			ni = (ni * 10) + (s[c] -'0');
+			ni = (ni * 10) + (s[c] - '0');
 			c++;
 		}
 
