@@ -2,6 +2,7 @@
 #define MAIN_H
 #include <stdio.h>
 
+void puts_half(char *str);
 void puts2(char *str);
 void rev_strick(char *s);
 void print_rev(char *s);
