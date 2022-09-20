@@ -21,3 +21,5 @@ void _puts(char *str)
 			count = -1;
 			_putchar('\n');
 		}
+	}
+}
