@@ -9,4 +9,5 @@ char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
 void print_buffer(char *b, int size);
+char *rot13(char *);
 #endif
