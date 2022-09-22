@@ -1,14 +1,20 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+  * print_buffer - This functions print the order size bytes of
+  *the buffer pointed by b
+  * @b: pointer
+  * @size: size in bytes of the buffer content.
+  * Return: Void
+  */
+
 void print_buffer(char *b, int size)
 {
 	int x, y, z;
 
 	if (size <= 0)
-	{
-		printf("\n")
-	}
+		printf("\n");
 	else
 	{
 		for (x = 0; x < size; x += 10)
@@ -16,32 +22,31 @@ void print_buffer(char *b, int size)
 			printf("%.8x:", x);
 			for (y = x; y < x + 10; y++)
 			{
-				if (j % 2 == 0)
-					printf(" ");
-				if (j < size)
+				if (y % 2 == 0)
 				{
-						printf("%.2x", j);
+					printf(" ");
+				}
+				if (y < size)
+				{
+					printf("%.2x", y);
 				}
 				else
 				{
-			
-					printf(" ");
+					printf("32");
 				}
 			}
 			printf(" ");
-			for (z = x, z < x + 10; z++)
+			for (z = x; z < x + 10; z++)
 			{
-				if (k >= size)
+				if (z >= size)
 					break;
-				if (*(b + k) < 32 || *(b + k) > 126)
-					printf("%cc", '.');
+				if (*(b + z) < 32 || *(b + z) > 126)
+					printf("%c", '.');
 				else
-					printf("%c", *(b+k));
+					printf("%c", *(b + z));
 			}
-			printf("'\n'")
+			printf("'\n'");
 
 		}
 	}
 }
-
-
