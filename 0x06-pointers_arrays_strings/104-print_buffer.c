@@ -28,11 +28,11 @@ void print_buffer(char *b, int size)
 				}
 				if (y < size)
 				{
-					printf("%.2x", y);
+					printf("%.2x", (b + y));
 				}
 				else
 				{
-					printf("32");
+					printf(" ");
 				}
 			}
 			printf(" ");
