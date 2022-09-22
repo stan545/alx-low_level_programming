@@ -32,7 +32,7 @@ void print_buffer(char *b, int size)
 				}
 				else
 				{
-					printf(" ");
+					printf("  ");
 				}
 			}
 			printf(" ");
@@ -45,8 +45,9 @@ void print_buffer(char *b, int size)
 				else
 					printf("%c", *(b + z));
 			}
-			printf("'\n'");
+			printf("\n");
 
 		}
 	}
 }
+
