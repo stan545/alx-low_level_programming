@@ -1,9 +1,9 @@
 #include <stdio.h>
+
 /**
-  * main - will be void
-  *
-  * Return: Always 0.
-  */
+ * main - entry point
+ * Return: 0 always success
+ */
 int main(void)
 {
 	int n;
