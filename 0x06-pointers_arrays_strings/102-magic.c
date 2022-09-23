@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - entry point
- * Return: 0 always success
- */
 int main(void)
 {
 	int n;
