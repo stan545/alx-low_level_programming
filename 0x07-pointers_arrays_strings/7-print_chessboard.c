@@ -2,7 +2,7 @@
 
 /**
   * print_chessboard - A function that prints chessboard.
-  *
+  * @a: 8 by 8 2D array
   * Return: void
   */
 void print_chessboard(char (*a)[8])
