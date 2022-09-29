@@ -4,20 +4,16 @@
   * _strlen - Computes the length of a string
   * @s: String to be compared
   *
-  * Return: The length of the string
+  * Return: The length of the string else return 0.
   */
 
 int _strlen(char *s)
 {
-	int i = 0;
-	int count = 0;
 
-	while (s[i] != 00)
-	{
-		count++;
-		i++;
-	}
-	return (count);
+	if (*s != 00)
+		return (1 + _strlen(s+1));
+	else
+		return (0);
 }
 
 /**
