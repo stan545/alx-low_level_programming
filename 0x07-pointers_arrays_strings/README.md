@@ -9,6 +9,7 @@
 - 7-print_chessboard funtion
 - 8-print_diagsums function
   
---- Advanced tasks  
+--- 
+# Advanced tasks  
 - 100-set_string
 - 101-crackme_password
