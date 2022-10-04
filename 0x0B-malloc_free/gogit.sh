@@ -1,7 +1,7 @@
 #!/bin/sh
 git add .
 
-read -p 'commit message: ' $cm
+read -p 'commit message: ' cm
 
 git commit -m '$cm'
 
