@@ -15,6 +15,5 @@ This Directory contains Tasks on malloc and free
 | [1-strdup](./1-strdup.c) | *This function return a newly allocated space in memory, which contains of the string given as a parameter.* |
 | [2-str_concat](./2-str_concat.c) | *This function concatenates two strings.* |
 | [3-alloc_grid](./3-alloc_grid.c) | *This function retuerns a pointer to a dimensional array of integers.* |
-| [free_grid](./4-free_grid.c) | *This function frees a dimensional grid previously created by [alloc_grid](./3-alloc_grid) function.* |
+| [4-free_grid](./4-free_grid.c) | *This function frees a dimensional grid previously created by [alloc_grid](./3-alloc_grid) function.* |
 ### Advanced Tasks
-
