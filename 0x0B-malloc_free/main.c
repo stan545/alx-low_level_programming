@@ -6,7 +6,7 @@ int main(void)
 {
 	char *s;
 
-	s = _strdup("ALX SE");
+	s = str_concat("ALX SE ", "Holberton");
 	if (s == 00)
 	{
 		printf("failed to allocate memory\n");
