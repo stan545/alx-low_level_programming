@@ -15,16 +15,16 @@ char *_strdup(char *str)
 	char *ps;
 	int i;
 
+	if (str == 00)
+	{
+		return (00);
+	}
 	for (i = 0; str[i]; i++)
 	{
 		size++;
 	}
-	ps = malloc(sizeof(char) * (size));
+	ps = malloc(sizeof(char) * (size + 1));
 	if (ps == 00)
-	{
-		return (00);
-	}
-	if (str == 00)
 	{
 		return (00);
 	}
@@ -32,6 +32,6 @@ char *_strdup(char *str)
 	{
 		ps[i] = str[i];
 	}
-	ps[i] = 00;
+	ps[size] = 00;
 	return (ps);
 }
