@@ -1,9 +1,0 @@
-#!/bin/sh
-
-git add .
-
-read -p 'commit message: ' cmes
-
-git commit -m '$cmes'
-
-git push
