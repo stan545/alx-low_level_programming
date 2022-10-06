@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -11,8 +10,8 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *ptr;
-	unsigned int i = 0;
+	char *ptr;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -23,10 +22,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	while (i < (size * nmemb))
+	for (i = 0; i < (size * nmemb); i++)
 	{
 		ptr[i] = '\0';
-		i++;
 	}
 	return (ptr);
 }
