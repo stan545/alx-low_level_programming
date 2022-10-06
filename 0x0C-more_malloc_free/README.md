@@ -11,5 +11,5 @@ This Directory contains more Tasks on malloc and free
 ## Project's Mandatory Tasks on malloc and free
 | Tasks | Description |
 | ------------- | ------------- |
-| * (0-malloc_checked)[./0-malloc_checked.c] | this function allocates memory of size b |
+| [0-malloc_checked](./0-malloc_checked.c) | *this function allocates memory of size b* |
 ### Advanced Tasks
