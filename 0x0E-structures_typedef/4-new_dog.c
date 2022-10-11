@@ -12,6 +12,8 @@ int _strlen(char *arr)
 
 	for (i = 0; arr[i] != '\0'; i++)
 	return (i);
+
+	return (i);
 }
 /**
  * _strcpy - copies a string pointed to by src to the buffer pointed to by dest
