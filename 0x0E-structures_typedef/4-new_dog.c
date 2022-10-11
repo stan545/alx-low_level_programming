@@ -10,8 +10,12 @@ int _strlen(char *arr)
 {
 	int i;
 
-	for (i = 0; arr[i] != '\0'; i++)
-	return (i);
+	i = 0;
+
+	while (arr[i] != '\0')
+	{
+		i++;
+	}
 
 	return (i);
 }
@@ -25,7 +29,11 @@ char *_strcpy(char *dest, char *src)
 {
 	int i, size;
 
-	for (size = 0; src[size] != '\0'; size++)
+	size = 0;
+	while (src[size] != '\0')
+	{
+		size++;
+	}
 	for (i = 0; i < size; i++)
 	{
 		dest[i] = src[i];
