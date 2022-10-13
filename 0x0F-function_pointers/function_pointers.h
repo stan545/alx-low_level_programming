@@ -1,9 +1,14 @@
-#include <stddef.h>
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
 
-int _putchar(int c);
+/* This is all the main protypes*/
 void print_name(char *name, void (*f)(char *));
-void array_iterator(int *array, size_t size, void (*action)(int));
-int int_index(int *array, int size, int (*cmp)(int ));
+int int_index(int *array, int size, int (*cmp)(int));
+
+/**
+  * _putchar - writes a char c to stdout
+  * @c: character t be printed
+  * Return: 1 on success, otherwise -1 (error)
+  */
+int _putchar(int c);
 #endif
