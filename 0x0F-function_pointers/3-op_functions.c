@@ -43,10 +43,12 @@ int op_mul(int a, int b)
  * @b: second integer value
  * Return: the result
 */
+
 int op_div(int a, int b)
 {
 	return (a / b);
 }
+
 /**
  * op_mod - get the modulo of two integer values
  * @a: first integer value
