@@ -1,19 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
- * read_textfile - converts a binary number to unsigned int
- * @filename: pointer to string
- * @letters: string containing the binary number
- * Return: the converted number
+ * read_textfile - reads a text file and prints it to standard output
+ * @filename: name of the file
+ * @letters: number of letters
+ * Return: if success return number of letter, else return 0
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t nlettersRead, nlettersWritten;
 	int fd;
-	char *text;
+	char *buffer;
+	ssize_t bytes_read, bytes_written;
 
 	if (filename == NULL)
 		return (0);
@@ -22,22 +20,22 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 
-	text = malloc(sizeof(char) * letters + 1);
-	if (text == NULL)
+	buffer = malloc(sizeof(char) * letters + 1);
+	if (buffer == NULL)
 		return (0);
 
-	nlettersRead = read(fd, text, letters);
-	if (nlettersRead == -1)
+	bytes_read = read(fd, buffer, letters);
+	if (bytes_read == -1)
 		return (0);
 
-	text[letters + 1] = '\0';
+	buffer[letters + 1] = '\0';
 	close(fd);
 
-	nlettersWritten = write(STDOUT_FILENO, text, nlettersRead);
-	if (nlettersWritten == -1)
+	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
+	if (bytes_written == -1)
 		return (0);
 
-	free(text);
+	free(buffer);
 
-	return (nlettersRead);
+	return (bytes_read);
 }
