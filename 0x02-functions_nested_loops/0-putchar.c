@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - a fuction that prints _putchar
  *
@@ -11,8 +11,8 @@ int main(void)
 
 	for (index = 0; word[index] != 00; index++)
 	{
-		putchar(word[index]);
+		_putchar(word[index]);
 	}
-	putchar(10);
+	_putchar(10);
 	return (0);
 }
