@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+ * main - a fuction that prints _putchar
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	char word[] = "_putchar";
