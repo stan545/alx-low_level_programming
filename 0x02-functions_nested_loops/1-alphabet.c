@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ * print_alphabet - function prints lowercasse alphabet
+ * Return: void
+ */
 void print_alphabet(void)
 {
 	int alph;
