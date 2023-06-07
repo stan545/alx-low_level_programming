@@ -18,11 +18,11 @@
 
 - Return the final result: Return the final result of the original problem from the recursive function.
 
-*It's important to note that recursion requires careful consideration of the base case and the progression towards it. If the base case is not reached or not properly defined, the recursive function may end up in an infinite loop.
+*It's important to note that recursion requires careful consideration of the base case and the progression towards it. If the base case is not reached or not properly defined, the recursive function may end up in an infinite loop.*
 
-Also, be mindful of the performance implications of recursion, as it can consume a significant amount of memory and stack space for deeply nested recursive calls. Some problems can be solved more efficiently using iterative approaches instead of recursion.
+*Also, be mindful of the performance implications of recursion, as it can consume a significant amount of memory and stack space for deeply nested recursive calls. Some problems can be solved more efficiently using iterative approaches instead of recursion.*
 
-Remember to check the specific syntax and rules of the programming language you are using, as recursion may have language-specific requirements or limitations.*
+*Remember to check the specific syntax and rules of the programming language you are using, as recursion may have language-specific requirements or limitations.*
 ### In what situation should you implement recursion?
 Recursion is commonly used in the following situations:
 
