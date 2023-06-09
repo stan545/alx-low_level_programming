@@ -6,6 +6,6 @@
 
 ### Basic usage of ``ar``, ``ranlib``, ``nm``
 
-- ar - The basic tool used to create static libraries is a program called 'ar', for 'archiver'.
-- ranlib - The commannd used to create or update the index of a static library
-- nm - This command lists symbols from object files
+- ``ar`` - The basic tool used to create static libraries is a program called 'ar', for 'archiver'.
+- ``ranlib`` - The commannd used to create or update the index of a static library
+- ``nm`` - This command lists symbols from object files
