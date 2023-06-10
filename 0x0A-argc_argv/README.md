@@ -2,7 +2,7 @@ C - argc, argv
 ==============
 
 
-#####SYNTAX: 
+##### SYNTAX:
 ``int main (int argc, char *argv[]);``
 
 ### What is argc and argv?
