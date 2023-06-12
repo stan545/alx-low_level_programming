@@ -53,5 +53,9 @@ int main(__attribute__((unused)) int argc, char *argv[])
 		}
 		printf("%d\n", result);
 	}
+	else
+	{
+		printf("0\n");
+	}
 	return (0);
 }
