@@ -48,7 +48,7 @@ char *str_concat(char *s1, char *s2)
 	i = _strlen(s1);
 	j = _strlen(s2);
 	ij = (i) + (j);	/* Total of length for both strings */
-	concat = malloc((ij + i) * sizeof(char)); /* allocate memory */
+	concat = malloc((ij) * sizeof(char)); /* allocate memory */
 	if (concat == NULL) /* check is allocation fails */
 	{
 		return (NULL);
@@ -66,4 +66,24 @@ char *str_concat(char *s1, char *s2)
 	}
 	concat[k] = '\0';
 	return (concat);
+}
+
+/**
+ * main - check the code for ALX School students.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char *s;
+
+    s = str_concat("Betty ", "Holberton");
+    if (s == NULL)
+    {
+        printf("failed\n");
+        return (1);
+    }
+    printf("%s\n", s);
+    free(s);
+    return (0);
 }
