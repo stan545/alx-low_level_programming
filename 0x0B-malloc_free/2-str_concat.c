@@ -18,18 +18,6 @@ int _strlen(char *s)
 }
 
 /**
- * _isEmpty - Checks if string is empty
- * @s: A pointer to string
- */
-void _isEmpty(char *s)
-{
-	if (s == NULL)
-	{
-		s = "";
-	}
-}
-
-/**
  * *str_concat - A function that concates two strings
  * @s1: The first string to concatenated
  * @s2: The second string to concatenated
@@ -43,12 +31,18 @@ char *str_concat(char *s1, char *s2)
 	int i = 0;
 	int j = 0;
 
-	_isEmpty(s1);
-	_isEmpty(s2);
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 	i = _strlen(s1);
 	j = _strlen(s2);
 	ij = (i) + (j);	/* Total of length for both strings */
-	concat = malloc((ij) * sizeof(char)); /* allocate memory */
+	concat = malloc((ij) * sizeof(char) + 1); /* allocate memory */
 	if (concat == NULL) /* check is allocation fails */
 	{
 		return (NULL);
